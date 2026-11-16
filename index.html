@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Донник — цветочная мастерская на Шаболовке, 2 · м. Октябрьская</title>
+<meta name="description" content="Цветочная мастерская «Донник»: букеты и композиции, доставка и самовывоз. Москва, ул. Шаболовка, 2, стр. 1, 350 м от м. «Октябрьская». Каждый день 10:00–22:00. +7 (903) 777-40-46">
+<meta property="og:title" content="Донник — цветочная мастерская на Шаболовке">
+<meta property="og:image" content="https://avatars.mds.yandex.net/get-altay/19532714/2a0000019bb379d41a55b04bc532f7237b90/XXL">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%233E6B48'/%3E%3Ccircle cx='12' cy='12' r='4' fill='%23E9B82F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;600;700&display=swap" rel="stylesheet">
+<style>:root{--bg:#F5F0EA;--ink:#1F2420;--acc:#3E6B48;--acc2:#2E5236;--soft:#E8EFD9;--yel:#E9B82F;--mut:#5C6660;--card:#fff;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3,.logo,.stats b,.big b,.curtain span{font-family:Unbounded,Manrope,sans-serif}
+a{color:inherit}
+img{display:block;max-width:100%}
+.curtain{position:fixed;inset:0;z-index:100;background:var(--acc);display:grid;place-items:center;clip-path:inset(0 0 0 0);transition:clip-path .9s cubic-bezier(.7,0,.2,1) .2s}
+.curtain span{color:var(--yel);font-size:clamp(32px,6vw,64px);letter-spacing:.02em}
+.loaded .curtain{clip-path:inset(0 0 100% 0)}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--yel);z-index:60}
+.hdr{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px clamp(16px,4vw,48px);background:rgba(245,240,234,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(31,36,32,.07)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;text-decoration:none}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{text-decoration:none;font-weight:600;font-size:15px}
+.nav a:not(.btn):hover{color:var(--acc)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;flex-direction:column;justify-content:center;gap:6px;align-items:center}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);transition:.3s}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 24px;border-radius:999px;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;font-size:16px;border:2px solid var(--acc);transition:background .25s,transform .25s,color .25s;will-change:transform}
+.btn:hover{background:var(--acc2);border-color:var(--acc2)}
+.btn-sm{min-height:44px;padding:8px 18px;font-size:15px;color:#fff!important}
+.btn-ghost{background:transparent;color:var(--acc)}
+.btn-ghost:hover{background:var(--acc);color:#fff}
+.btn-light{background:var(--yel);border-color:var(--yel);color:var(--ink)}
+.btn-light:hover{background:#fff;border-color:#fff}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:clamp(32px,6vw,80px) clamp(16px,4vw,48px) 60px;max-width:1320px;margin:0 auto}
+.kicker{margin-bottom:18px}
+.status{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:var(--soft);font-weight:700;font-size:14px;color:var(--acc2)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--mut)}
+.status.open::before{background:#3BAA57;box-shadow:0 0 0 4px rgba(59,170,87,.2)}
+.status.closed::before{background:#C24B3A}
+h1{font-size:clamp(36px,5.6vw,72px);line-height:1.04;font-weight:700;letter-spacing:-.02em}
+.h-split span{display:inline-block;opacity:0;transform:translateY(40px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
+.loaded .h-split span{opacity:1;transform:none}
+.loaded .h-split span:nth-child(2){transition-delay:.12s}.loaded .h-split span:nth-child(3){transition-delay:.24s}
+.acc{color:var(--acc)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--mut);margin:22px 0 28px;max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.stats{list-style:none;display:flex;gap:clamp(18px,3vw,40px);margin-top:36px;flex-wrap:wrap}
+.stats li{display:flex;flex-direction:column}
+.stats b{font-size:clamp(26px,3vw,36px);color:var(--acc)}
+.stats span{font-size:14px;color:var(--mut);line-height:1.35}
+.hero-art{position:relative;aspect-ratio:1/1.05;max-width:560px;width:100%;justify-self:center}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%}
+.sprig{stroke-dasharray:500;stroke-dashoffset:500;transition:stroke-dashoffset 2s ease .6s}
+.loaded .sprig{stroke-dashoffset:0}
+.ph{position:absolute;border-radius:var(--r);overflow:hidden;box-shadow:0 20px 50px rgba(31,36,32,.18);border:6px solid #fff;background:#fff;transition:transform .2s ease-out}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph1{width:48%;height:62%;left:4%;top:8%;rotate:-5deg}
+.ph2{width:42%;height:52%;right:2%;top:2%;rotate:4deg}
+.ph3{width:40%;height:46%;right:14%;bottom:0;rotate:-2deg}
+.sticker{position:absolute;left:30%;bottom:4%;width:120px;height:120px;display:grid;place-items:center}
+.sticker svg{position:absolute;inset:0;animation:spin 16s linear infinite}
+.sticker text{font:700 10.5px Manrope,sans-serif;letter-spacing:.12em;fill:var(--ink)}
+.sticker::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--yel)}
+.sticker span{position:relative;font:700 26px Unbounded,sans-serif;color:var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.marquee{overflow:hidden;background:var(--acc);color:#fff;padding:16px 0;transform:rotate(-1.5deg);margin:20px -20px 40px}
+.mq-track{display:flex;gap:28px;width:max-content;animation:mq 34s linear infinite;font:600 clamp(18px,2.2vw,26px) Unbounded,sans-serif;white-space:nowrap;align-items:center}
+.mq-track i{color:var(--yel);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sec{max-width:1320px;margin:0 auto;padding:clamp(48px,7vw,96px) clamp(16px,4vw,48px)}
+.sec-head{margin-bottom:28px;max-width:760px}
+h2{font-size:clamp(28px,3.8vw,48px);line-height:1.1;letter-spacing:-.01em;margin-bottom:12px}
+.note{color:var(--mut);font-size:15px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tab{min-height:44px;padding:8px 20px;border-radius:999px;border:2px solid var(--acc);background:transparent;color:var(--acc);font:700 15px Manrope,sans-serif;cursor:pointer;transition:.2s}
+.tab.on,.tab:hover{background:var(--acc);color:#fff}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.pc{position:relative;background:var(--card);border-radius:var(--r);padding:22px 20px 20px;display:flex;flex-direction:column;gap:10px;transition:transform .3s,box-shadow .3s;color:var(--acc)}
+.pc:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(31,36,32,.1)}
+.pc-tag{position:absolute;top:16px;right:16px;font-size:12px;font-weight:700;background:var(--soft);color:var(--acc2);padding:4px 10px;border-radius:999px}
+.pc h3{font:600 16px/1.35 Manrope,sans-serif;color:var(--ink);flex:1}
+.pc-price{font:700 22px Unbounded,sans-serif;color:var(--ink)}
+.pc.hide{display:none}
+.masonry{columns:4 260px;column-gap:14px}
+.g-item{break-inside:avoid;margin-bottom:14px;border-radius:var(--r);overflow:hidden;position:relative;cursor:zoom-in;background:#fff}
+.g-item img{width:100%;transition:transform .6s}
+.g-item:hover img{transform:scale(1.05)}
+.g-item figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;opacity:0;transform:translateY(6px);transition:.3s}
+.g-item:hover figcaption,.g-item:focus-within figcaption{opacity:1;transform:none}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.sv{background:var(--card);border-radius:var(--r);padding:26px;transition:transform .3s}
+.sv:hover{transform:translateY(-6px)}
+.sv-ic{width:58px;height:58px;border-radius:18px;background:var(--soft);color:var(--acc);display:grid;place-items:center;margin-bottom:16px}
+.sv h3{font-size:18px;margin-bottom:6px}
+.sv p{color:var(--mut);font-size:15px}
+.tgband{display:flex;align-items:center;gap:18px;margin-top:22px;padding:22px 26px;border-radius:var(--r);background:var(--yel);text-decoration:none;transition:transform .3s}
+.tgband:hover{transform:translateY(-4px)}
+.tg-ic{width:60px;height:60px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--acc);flex:none}
+.tgband .arrow{margin-left:auto;font-size:28px}
+.dark{background:var(--ink);color:#fff;max-width:none;border-radius:40px 40px 0 0}
+.dark>*{max-width:1224px;margin-left:auto;margin-right:auto}
+.rv-top{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,80px);align-items:center;margin-bottom:40px}
+.big b{font-size:clamp(72px,10vw,128px);line-height:1;color:var(--yel);display:block}
+.big p{color:#C9CFC9;font-size:14px;margin-top:6px}
+.stars{color:var(--yel);letter-spacing:3px}
+.bars{display:grid;gap:22px}
+.bar{display:grid;grid-template-columns:1fr auto;gap:6px 12px;font-size:15px}
+.bar span:first-child{font-weight:700}
+.bar span:nth-child(2){color:#C9CFC9}
+.bar i{grid-column:1/-1;height:10px;border-radius:9px;background:rgba(255,255,255,.12);position:relative;overflow:hidden}
+.bar i::after{content:"";position:absolute;inset:0;width:var(--w,0%);background:var(--yel);border-radius:9px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.rv{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px}
+.rv p{font-size:16px;flex:1}
+.rv cite{font-style:normal;font-weight:700;color:var(--yel)}
+.center{text-align:center;margin-top:34px}
+.cgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:32px}
+.cinfo{background:var(--card);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:16px}
+.row{display:flex;gap:14px;align-items:flex-start}
+.row svg{flex:none;color:var(--acc);margin-top:2px}
+.row a{text-decoration:none}
+.hours{list-style:none;flex:1;display:grid;gap:2px}
+.hours li{display:flex;justify-content:space-between;padding:4px 10px;border-radius:10px;font-size:15px}
+.hours li.today{background:var(--soft);font-weight:700}
+.cinfo .cta{margin-top:6px}
+.cinfo .btn{min-height:46px;padding:10px 18px;font-size:15px}
+.map{border-radius:var(--r);overflow:hidden;height:360px;background:var(--soft)}
+.map iframe{width:100%;height:100%;border:0}
+.cphotos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.cphotos figure{border-radius:16px;overflow:hidden;position:relative;aspect-ratio:3/4;background:#fff}
+.cphotos img{width:100%;height:100%;object-fit:cover}
+.cphotos figcaption{position:absolute;left:8px;bottom:8px;right:8px;font-size:12px;font-weight:600;background:rgba(255,255,255,.9);padding:3px 8px;border-radius:999px;width:fit-content}
+.ftr{background:var(--ink);color:#C9CFC9;padding:40px clamp(16px,4vw,48px);text-align:center;display:grid;gap:8px;font-size:15px;border-top:1px solid rgba(255,255,255,.08)}
+.ftr b{color:#fff}
+.ftr .small{font-size:13px;opacity:.75}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(15,18,16,.94);display:flex;align-items:center;justify-content:center}
+.lb[hidden]{display:none}
+.lb figure{max-width:90vw;max-height:86vh;text-align:center;color:#fff}
+.lb img{max-width:90vw;max-height:80vh;border-radius:14px;margin:auto}
+.lb figcaption{margin-top:10px;font-size:15px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:52px;height:52px;border-radius:50%;font-size:30px;cursor:pointer}
+.lb-x{top:18px;right:18px}.lb-p{left:18px}.lb-n{right:18px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:900px){
+ .burger{display:flex}
+ .nav{position:fixed;top:0;right:0;height:100vh;width:min(320px,85vw);flex-direction:column;align-items:flex-start;justify-content:center;gap:22px;padding:40px;background:var(--bg);box-shadow:-20px 0 40px rgba(0,0,0,.12);transform:translateX(105%);visibility:hidden;transition:transform .4s cubic-bezier(.7,0,.2,1),visibility 0s .4s;z-index:55}
+ .nav a{font-size:20px}
+ .nav.open{transform:none;visibility:visible;transition:transform .4s cubic-bezier(.7,0,.2,1)}
+ .burger{z-index:56}
+ .burger.x span:nth-child(1){transform:translateY(8px) rotate(45deg)}.burger.x span:nth-child(2){opacity:0}.burger.x span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+ .hero{grid-template-columns:1fr}
+ .hero-art{max-width:460px}
+ .cgrid{grid-template-columns:1fr}
+ .rv-top{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .pgrid{grid-template-columns:1fr 1fr;gap:10px}
+ .pc{padding:16px 14px 14px}
+ .pc-tag{position:static;width:fit-content}
+ .pc svg{display:none}
+ .pc h3{font-size:14px}
+ .pc-price{font-size:17px}
+ .masonry{columns:2;column-gap:10px}
+ .g-item{margin-bottom:10px}
+ .sticker{width:96px;height:96px}
+ .sticker text{font-size:12px}
+ .sticker span{font-size:21px}
+ .tgband{flex-wrap:wrap;padding:20px}
+ .tgband .arrow{display:none}
+ .dark{border-radius:28px 28px 0 0}
+ .cta .btn{flex:1 1 100%;justify-content:center}
+ .map{height:300px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .reveal,.h-split span{opacity:1;transform:none}
+ .curtain{display:none}
+}
+</style>
+</head>
+<body>
+<div class="curtain" aria-hidden="true"><span>Донник</span></div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="hdr">
+ <a href="#top" class="logo"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#3E6B48"/><g fill="#E9B82F"><circle cx="12" cy="7" r="2"/><circle cx="12" cy="11" r="2"/><circle cx="12" cy="15" r="2"/><circle cx="9.5" cy="9" r="1.6"/><circle cx="14.5" cy="9" r="1.6"/><circle cx="9.5" cy="13" r="1.6"/><circle cx="14.5" cy="13" r="1.6"/></g></svg>Донник</a>
+ <nav class="nav" id="nav">
+  <a href="#prices">Цены</a><a href="#gallery">Фото</a><a href="#services">Услуги</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+  <a href="tel:+79037774046" class="btn btn-sm"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Позвонить</a>
+ </nav>
+ <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="hero-txt">
+  <p class="kicker"><span class="status" id="status">Каждый день 10:00–22:00</span></p>
+  <h1 class="h-split"><span>Цветочная</span> <span>мастерская</span> <span class="acc">«Донник»</span></h1>
+  <p class="lead">Букеты и композиции на Шаболовке, 2 — в 350 м от метро «Октябрьская». Доставка и самовывоз.</p>
+  <div class="cta">
+   <a href="tel:+79037774046" class="btn mag"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Позвонить</a>
+   <a href="https://t.me/donnik_flow" class="btn btn-ghost mag" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z M9 13l9-7"/></svg>Написать в Telegram</a>
+  </div>
+  <ul class="stats">
+   <li><b>5,0</b><span>рейтинг на Яндекс Картах<br>32 оценки</span></li>
+   <li><b>29</b><span>отзывов</span></li>
+   <li><b>350 м</b><span>до метро<br>«Октябрьская»</span></li>
+  </ul>
+ </div>
+ <div class="hero-art" id="heroArt">
+  <svg class="hero-bg" viewBox="0 0 400 400" aria-hidden="true">
+   <circle cx="200" cy="200" r="180" fill="#E8EFD9"/>
+   <g class="sprig" stroke="#3E6B48" stroke-width="3" fill="none" stroke-linecap="round"><path d="M70 360 C90 260 120 170 180 60"/><path d="M110 270 l-30 -20M130 210 l-34 -12M150 150 l-28 -18"/></g>
+   <g fill="#E9B82F"><ellipse cx="180" cy="58" rx="7" ry="10"/><ellipse cx="168" cy="80" rx="7" ry="10"/><ellipse cx="190" cy="80" rx="7" ry="10"/><ellipse cx="160" cy="104" rx="6" ry="9"/><ellipse cx="180" cy="104" rx="6" ry="9"/><ellipse cx="152" cy="128" rx="6" ry="9"/></g>
+  </svg>
+  <figure class="ph ph1" data-depth="18"><img src="https://avatars.mds.yandex.net/get-altay/19532714/2a0000019bb379d41a55b04bc532f7237b90/XXL" alt="Букет" loading="lazy" onerror="this.onerror=null;this.src='img/p06.jpg'" class="" fetchpriority="high"></figure>
+  <figure class="ph ph2" data-depth="34"><img src="https://avatars.mds.yandex.net/get-altay/19546938/2a0000019c50a34b6ca8c2eeaa67fd5ce829/XXL" alt="Букет" loading="lazy" onerror="this.onerror=null;this.src='img/p18.jpg'" class="" ></figure>
+  <figure class="ph ph3" data-depth="26"><img src="https://avatars.mds.yandex.net/get-altay/18112381/2a0000019e02410c622a526ccef00daa500f/XXL" alt="Букет на табурете" loading="lazy" onerror="this.onerror=null;this.src='img/p11.jpg'" class="" ></figure>
+  <div class="sticker" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#circ">ДОННИК • ЦВЕТОЧНАЯ МАСТЕРСКАЯ • ШАБОЛОВКА •</textPath></text></svg><span>5,0</span></div>
+ </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq-track"><span>букеты</span><i>✿</i><span>композиции</span><i>✿</i><span>коробочки</span><i>✿</i><span>срезанные цветы</span><i>✿</i><span>подарочная упаковка</span><i>✿</i><span>доставка</span><i>✿</i><span>самовывоз</span><i>✿</i><span>каждый день 10:00–22:00</span><i>✿</i><span>букеты</span><i>✿</i><span>композиции</span><i>✿</i><span>коробочки</span><i>✿</i><span>срезанные цветы</span><i>✿</i><span>подарочная упаковка</span><i>✿</i><span>доставка</span><i>✿</i><span>самовывоз</span><i>✿</i><span>каждый день 10:00–22:00</span><i>✿</i></div></div>
+
+<section id="prices" class="sec">
+ <div class="sec-head reveal"><h2>Букеты и композиции</h2>
+  <p class="note">Цены из карточки «Донника» на Яндекс Картах, данные на 16.11.2026. Прайс давно не обновлялся — актуальную стоимость и наличие уточняйте по телефону.</p></div>
+ <div class="tabs" role="tablist">
+  <button class="tab on" data-f="all">Все</button><button class="tab" data-f="bouquet">Букеты</button><button class="tab" data-f="comp">Композиции</button><button class="tab" data-f="box">Коробочки</button>
+ </div>
+ <div class="pgrid" id="pgrid">
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Луговое очарование»</h3><p class="pc-price">10 900 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Ягодная россыпь»</h3><p class="pc-price">9 800 ₽</p></article>
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Голландский натюрморт» Размер &quot;M&quot;</h3><p class="pc-price">9 100 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Песнь утра»</h3><p class="pc-price">7 700 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Красочные Грёзы»</h3><p class="pc-price">6 990 ₽</p></article>
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Цветущая милость»</h3><p class="pc-price">5 600 ₽</p></article>
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Пламя и нежность»</h3><p class="pc-price">5 000 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Элегия в пастели»</h3><p class="pc-price">4 810 ₽</p></article>
+<article class="pc reveal" data-cat="box"><span class="pc-tag">Коробочка</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Коробочка с герберой</h3><p class="pc-price">4 750 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Нежное прикосновение»</h3><p class="pc-price">4 600 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция Розовый рассвет</h3><p class="pc-price">16 300 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «KISS» размер &quot;L&quot;</h3><p class="pc-price">11 600 ₽</p></article>
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Гармония контрастов»</h3><p class="pc-price">10 290 ₽</p></article>
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Полевая мелодия»</h3><p class="pc-price">8 500 ₽</p></article>
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Яркие мгновения»</h3><p class="pc-price">7 200 ₽</p></article>
+<article class="pc reveal" data-cat="bouquet"><span class="pc-tag">Букет</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Букет «Безмятежности дыхание»</h3><p class="pc-price">7 000 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Угли в майском костре»</h3><p class="pc-price">5 600 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Летняя полянка»</h3><p class="pc-price">5 350 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Туманный рассвет»</h3><p class="pc-price">5 150 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Кантри»</h3><p class="pc-price">5 800 ₽</p></article>
+<article class="pc reveal" data-cat="comp"><span class="pc-tag">Композиция</span><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="2.2"/><path d="M12 7.8c0-3 3-3 3 0s-3 2.2-3 2.2M12 7.8c0-3-3-3-3 0s3 2.2 3 2.2M14.2 10c3 0 3 3 0 3M9.8 10c-3 0-3 3 0 3M12 12v9M12 17c-2-2-4-2-5-1M12 18c2-2 4-2 5-1"/></svg><h3>Композиция «Динамика»</h3><p class="pc-price">6 100 ₽</p></article>
+ </div>
+</section>
+
+<section id="gallery" class="sec">
+ <div class="sec-head reveal"><h2>Фото из мастерской</h2><p class="note">Снимки из карточки «Донника» на Яндекс Картах. Нажмите, чтобы увеличить.</p></div>
+ <div class="masonry">
+<figure class="g-item reveal" data-i="0"><img src="https://avatars.mds.yandex.net/get-altay/19699569/2a0000019e02410c95e6767ec4f974013d76/XXL" alt="Композиция в розовом кашпо" loading="lazy" onerror="this.onerror=null;this.src='img/p01.jpg'" class="" ><figcaption>Композиция в розовом кашпо</figcaption></figure>
+<figure class="g-item reveal" data-i="1"><img src="https://avatars.mds.yandex.net/get-altay/19532714/2a0000019bb379d41a55b04bc532f7237b90/XXL" alt="Букет" loading="lazy" onerror="this.onerror=null;this.src='img/p06.jpg'" class="" ><figcaption>Букет</figcaption></figure>
+<figure class="g-item reveal" data-i="2"><img src="https://avatars.mds.yandex.net/get-altay/16069310/2a0000019ba2f923b2575d1fc9fcbb7b000d/XXL" alt="Сиреневые цветы на столе" loading="lazy" onerror="this.onerror=null;this.src='img/p09.jpg'" class="" ><figcaption>Сиреневые цветы на столе</figcaption></figure>
+<figure class="g-item reveal" data-i="3"><img src="https://avatars.mds.yandex.net/get-altay/18114977/2a0000019e02410bec4ceb6c22c6e94ab787/XXL" alt="Композиция в кашпо" loading="lazy" onerror="this.onerror=null;this.src='img/p02.jpg'" class="" ><figcaption>Композиция в кашпо</figcaption></figure>
+<figure class="g-item reveal" data-i="4"><img src="https://avatars.mds.yandex.net/get-altay/15388054/2a0000019ba2f91715d42ac2b56d0159372f/XXL" alt="Букет" loading="lazy" onerror="this.onerror=null;this.src='img/p13.jpg'" class="" ><figcaption>Букет</figcaption></figure>
+<figure class="g-item reveal" data-i="5"><img src="https://avatars.mds.yandex.net/get-altay/18152412/2a0000019c7a0dd672c2ecaf7b0601949355/XXL" alt="Витрина с букетами" loading="lazy" onerror="this.onerror=null;this.src='img/p22.jpg'" class="" ><figcaption>Витрина с букетами</figcaption></figure>
+<figure class="g-item reveal" data-i="6"><img src="https://avatars.mds.yandex.net/get-altay/18128678/2a0000019c50a3211d5856928fb4e970420b/XXL" alt="Композиция на табурете" loading="lazy" onerror="this.onerror=null;this.src='img/p04.jpg'" class="" ><figcaption>Композиция на табурете</figcaption></figure>
+<figure class="g-item reveal" data-i="7"><img src="https://avatars.mds.yandex.net/get-altay/18703564/2a0000019bb379aa50ea28aee6db1bdcb4c9/XXL" alt="Букет в вазе" loading="lazy" onerror="this.onerror=null;this.src='img/p12.jpg'" class="" ><figcaption>Букет в вазе</figcaption></figure>
+<figure class="g-item reveal" data-i="8"><img src="https://avatars.mds.yandex.net/get-altay/20217881/2a000001a032c45b152039276d8bd80457ca/XXL" alt="Букет в вазе" loading="lazy" onerror="this.onerror=null;this.src='img/p17.jpg'" class="" ><figcaption>Букет в вазе</figcaption></figure>
+<figure class="g-item reveal" data-i="9"><img src="https://avatars.mds.yandex.net/get-altay/17651669/2a0000019bb379d6ce846c06486936aeeaa2/XXL" alt="Букет в руке" loading="lazy" onerror="this.onerror=null;this.src='img/p19.jpg'" class="" ><figcaption>Букет в руке</figcaption></figure>
+<figure class="g-item reveal" data-i="10"><img src="https://avatars.mds.yandex.net/get-altay/19766436/2a0000019c50a3842ad920546cd8397bc395/XXL" alt="Ветки в напольной вазе" loading="lazy" onerror="this.onerror=null;this.src='img/p03.jpg'" class="" ><figcaption>Ветки в напольной вазе</figcaption></figure>
+<figure class="g-item reveal" data-i="11"><img src="https://avatars.mds.yandex.net/get-altay/16410678/2a0000019c50a37d9ad4186e954419fd45fc/XXL" alt="Букет в вазе" loading="lazy" onerror="this.onerror=null;this.src='img/p15.jpg'" class="" ><figcaption>Букет в вазе</figcaption></figure>
+<figure class="g-item reveal" data-i="12"><img src="https://avatars.mds.yandex.net/get-altay/19546938/2a0000019c50a34b6ca8c2eeaa67fd5ce829/XXL" alt="Букет" loading="lazy" onerror="this.onerror=null;this.src='img/p18.jpg'" class="" ><figcaption>Букет</figcaption></figure>
+<figure class="g-item reveal" data-i="13"><img src="https://avatars.mds.yandex.net/get-altay/20828855/2a0000019ffc5994d1e83d494d6bb60be426/XXL" alt="Букет и полки в зале" loading="lazy" onerror="this.onerror=null;this.src='img/p23.jpg'" class="" ><figcaption>Букет и полки в зале</figcaption></figure>
+<figure class="g-item reveal" data-i="14"><img src="https://avatars.mds.yandex.net/get-altay/20142926/2a0000019e02410c2d2426d6fa01cf058997/XXL" alt="Букет в вазе" loading="lazy" onerror="this.onerror=null;this.src='img/p16.jpg'" class="" ><figcaption>Букет в вазе</figcaption></figure>
+<figure class="g-item reveal" data-i="15"><img src="https://avatars.mds.yandex.net/get-altay/19593321/2a0000019ba2f91db793d6047fc718e5e7cc/XXL" alt="Цветы крупным планом" loading="lazy" onerror="this.onerror=null;this.src='img/p05.jpg'" class="" ><figcaption>Цветы крупным планом</figcaption></figure>
+<figure class="g-item reveal" data-i="16"><img src="https://avatars.mds.yandex.net/get-altay/19519244/2a0000019c50a37c9391a75b62021bbd6972/XXL" alt="Букет" loading="lazy" onerror="this.onerror=null;this.src='img/p14.jpg'" class="" ><figcaption>Букет</figcaption></figure>
+ </div>
+</section>
+
+<section id="services" class="sec">
+ <div class="sec-head reveal"><h2>Что важно знать</h2></div>
+ <div class="sgrid">
+<div class="sv reveal"><div class="sv-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v9H3zM14 9h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h3>Доставка</h3><p>Отмечена в карточке на Яндекс Картах. Условия уточняйте по телефону.</p></div>
+<div class="sv reveal"><div class="sv-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg></div><h3>Самовывоз</h3><p>Заберите букет в мастерской на Шаболовке.</p></div>
+<div class="sv reveal"><div class="sv-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-2-4-6-3-5 0M12 7c2-4 6-3 5 0"/></svg></div><h3>Подарочная упаковка</h3><p>Упакуют букет в подарок.</p></div>
+<div class="sv reveal"><div class="sv-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg></div><h3>Любой удобный способ оплаты</h3><p>QR-код, наличными, картой, безналичная оплата, кредитной картой.</p></div>
+<div class="sv reveal"><div class="sv-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="9" r="1.8"/><circle cx="11" cy="6" r="1.8"/><circle cx="15" cy="6.5" r="1.8"/><circle cx="18" cy="10" r="1.8"/><path d="M8 17c0-3 2-5 4-5s4 2 4 5c0 2-2 2-4 1.5C10 19 8 19 8 17z"/></svg></div><h3>Можно с животными</h3><p>Посещение разрешено со всеми животными.</p></div>
+<div class="sv reveal"><div class="sv-ic"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="5" r="1.6"/><path d="M9 8v5h5l2 5M9 13a4 4 0 1 0 4 5M3 21h18"/></svg></div><h3>Пандус</h3><p>Вход доступен на инвалидной коляске, помещение — частично.</p></div>
+ </div>
+ <a class="tgband reveal" href="https://t.me/donnik_lab" target="_blank" rel="noopener">
+  <span class="tg-ic"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z M9 13l9-7"/></svg></span>
+  <span><b>Telegram-канал «Донник»</b><br>Фото и видео букетов и новых поставок — t.me/donnik_lab</span>
+  <span class="arrow">→</span>
+ </a>
+</section>
+
+<section id="reviews" class="sec dark">
+ <div class="rv-top">
+  <div class="big reveal"><b>5,0</b><span class="stars">★★★★★</span><p>32 оценки · 29 отзывов<br>на Яндекс Картах, данные на 16.11.2026</p></div>
+  <div class="bars reveal">
+   <div class="bar"><span>Букеты</span><span>100% положительных · 21 отзыв</span><i data-w="100"></i></div>
+   <div class="bar"><span>Качество товаров</span><span>100% положительных · 17 отзывов</span><i data-w="100"></i></div>
+  </div>
+ </div>
+ <div class="rgrid">
+<blockquote class="rv reveal"><div class="stars" aria-label="5 из 5">★★★★★</div><p>«Отличный магазин цветов!<br>Быстро собрали милый букет под нужный запрос и сумму<br>Цветы свежие, можно собрать необычную композицию»</p><cite>Юлия М.</cite></blockquote>
+<blockquote class="rv reveal"><div class="stars" aria-label="5 из 5">★★★★★</div><p>«Наконец-то открылся такой красивый цветочный в этом районе.<br>Шикарный выбор и очень красивые готовые букеты ❤️ восторг!»</p><cite>Екатерина Г.</cite></blockquote>
+<blockquote class="rv reveal"><div class="stars" aria-label="5 из 5">★★★★★</div><p>«Прекрасный выбор свежих цветов, есть из чего скомпоновать стильный букет. И самое главное - грамотный флорист. Спасибо за букет»</p><cite>Vik</cite></blockquote>
+<blockquote class="rv reveal"><div class="stars" aria-label="5 из 5">★★★★★</div><p>«Заказали букет онлайн с доставкой. Приехал хорошо упакованный в целости и сохранности,очень красивый букет. Будем теперь заказывать только тут! Всем советую»</p><cite>Екатерина Т.</cite></blockquote>
+<blockquote class="rv reveal"><div class="stars" aria-label="5 из 5">★★★★★</div><p>«Прекрасный цветочный магазин! Букеты — просто загляденье: стильные, гармоничные, с продуманными деталями. Цветы свежие, обслуживание вежливое. Однозначно рекомендую!»</p><cite>Лианна Я.</cite></blockquote>
+<blockquote class="rv reveal"><div class="stars" aria-label="5 из 5">★★★★★</div><p>«Очень стильный магазин открылся! Много цветов, ароматы для дома и свечи. Зайду еще!»</p><cite>Антон</cite></blockquote>
+ </div>
+ <p class="center"><a href="https://yandex.ru/maps/org/donnik/128365573491/reviews/" target="_blank" rel="noopener" class="btn btn-light">Все отзывы на Яндекс Картах</a></p>
+</section>
+
+<section id="contacts" class="sec">
+ <div class="sec-head reveal"><h2>Как нас найти</h2></div>
+ <div class="cgrid">
+  <div class="cinfo reveal">
+   <p class="row"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span><b>Москва, ул. Шаболовка, 2, стр. 1</b><br>Вход со стороны трамвайных остановок</span></p>
+   <p class="row"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 8 6l4 8 4-8 4 12M2 18h20"/></svg><span>Метро «Октябрьская» — 350 м</span></p>
+   <p class="row"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+79037774046"><b>+7 (903) 777-40-46</b></a></p>
+   <div class="row"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><ul class="hours" id="hours"><li data-d="0"><span>Понедельник</span><span>10:00–22:00</span></li>
+<li data-d="1"><span>Вторник</span><span>10:00–22:00</span></li>
+<li data-d="2"><span>Среда</span><span>10:00–22:00</span></li>
+<li data-d="3"><span>Четверг</span><span>10:00–22:00</span></li>
+<li data-d="4"><span>Пятница</span><span>10:00–22:00</span></li>
+<li data-d="5"><span>Суббота</span><span>10:00–22:00</span></li>
+<li data-d="6"><span>Воскресенье</span><span>10:00–22:00</span></li></ul></div>
+   <p class="row"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="5" r="1.6"/><path d="M9 8v5h5l2 5M9 13a4 4 0 1 0 4 5M3 21h18"/></svg><span>Пандус. Вход доступен на инвалидной коляске, помещение — частично.</span></p>
+   <div class="cta">
+    <a href="tel:+79037774046" class="btn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Позвонить</a>
+    <a href="https://t.me/donnik_flow" class="btn btn-ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z M9 13l9-7"/></svg>Telegram</a>
+    <a href="https://max.ru/u/f9LHodD0cOI3xRKFApns9CyWdoz2AuTmcaiFPiCvR5majuOkNi05NrvHKoc" class="btn btn-ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Max</a>
+    <a href="https://yandex.ru/maps/org/donnik/128365573491/" class="btn btn-ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Открыть в Яндекс Картах</a>
+   </div>
+  </div>
+  <div class="cside">
+   <div class="map reveal"><iframe src="https://yandex.ru/map-widget/v1/org/donnik/128365573491/" title="«Донник» на Яндекс Картах" loading="lazy" allowfullscreen></iframe></div>
+   <div class="cphotos">
+    <figure class="reveal"><img src="https://avatars.mds.yandex.net/get-altay/18150755/2a0000019d34962009c58e823fca5de34dd7/XXL" alt="Входная дверь" loading="lazy" onerror="this.onerror=null;this.src='img/p21.jpg'" class="" ><figcaption>Входная дверь</figcaption></figure>
+    <figure class="reveal"><img src="https://avatars.mds.yandex.net/get-altay/19546938/2a0000019c50a3853fa64d30de3367c1a5ac/XXL" alt="Зал мастерской" loading="lazy" onerror="this.onerror=null;this.src='img/p00.jpg'" class="" ><figcaption>Зал</figcaption></figure>
+    <figure class="reveal"><img src="https://avatars.mds.yandex.net/get-altay/18150755/2a0000019bb37b84ae9d25c556eda370bd45/XXL" alt="Неоновая надпись «Цветы» в зале" loading="lazy" onerror="this.onerror=null;this.src='img/p07.jpg'" class="" ><figcaption>Неоновая надпись «Цветы»</figcaption></figure>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="ftr">
+ <p><b>Донник</b> · цветочная мастерская · Москва, ул. Шаболовка, 2, стр. 1</p>
+ <p><a href="tel:+79037774046">+7 (903) 777-40-46</a> · <a href="https://t.me/donnik_lab" target="_blank" rel="noopener">Telegram-канал</a> · <a href="https://yandex.ru/maps/org/donnik/128365573491/" target="_blank" rel="noopener">Яндекс Карты</a></p>
+ <p class="small">Информация по данным карточки организации на Яндекс Картах на 16.11.2026. Уточняйте наличие и цены по телефону.</p>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото" hidden>
+ <button class="lb-x" aria-label="Закрыть">×</button><button class="lb-p" aria-label="Назад">‹</button>
+ <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+ <button class="lb-n" aria-label="Вперёд">›</button>
+</div>
+<script>(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+window.addEventListener('load',function(){document.body.classList.add('loaded')});
+setTimeout(function(){document.body.classList.add('loaded')},2500);
+
+// Статус по московскому времени: каждый день 10:00–22:00
+function msk(){var d=new Date();return new Date(d.getTime()+(d.getTimezoneOffset()+180)*60000)}
+function status(){var n=msk(),m=n.getHours()*60+n.getMinutes(),open=m>=600&&m<1320,s=document.getElementById('status');
+ s.className='status '+(open?'open':'closed');
+ s.textContent=open?'Открыто до 22:00':(m<600?'Закрыто · откроемся в 10:00':'Закрыто · откроемся завтра в 10:00');
+ var di=(n.getDay()+6)%7;document.querySelectorAll('#hours li').forEach(function(li){li.classList.toggle('today',+li.dataset.d===di)})}
+status();setInterval(status,60000);
+
+// Меню
+var b=document.getElementById('burger'),nav=document.getElementById('nav');
+b.addEventListener('click',function(){var o=nav.classList.toggle('open');b.classList.toggle('x',o);b.setAttribute('aria-expanded',o)});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');b.classList.remove('x');b.setAttribute('aria-expanded',false)})});
+
+// Фильтры прайса
+document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){
+ document.querySelectorAll('.tab').forEach(function(x){x.classList.toggle('on',x===t)});
+ var f=t.dataset.f;document.querySelectorAll('.pc').forEach(function(c){c.classList.toggle('hide',f!=='all'&&c.dataset.cat!==f)})})});
+
+// Появление при скролле
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');
+ e.target.querySelectorAll('[data-w]').forEach(function(i){i.style.setProperty('--w',i.dataset.w+'%')});io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){if(reduce){el.classList.add('in');el.querySelectorAll('[data-w]').forEach(function(i){i.style.setProperty('--w',i.dataset.w+'%')})}else io.observe(el)});
+
+// Прогресс скролла
+var pr=document.querySelector('.progress');
+addEventListener('scroll',function(){var h=document.documentElement;pr.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+
+// Параллакс фото первого экрана
+if(!reduce){var art=document.getElementById('heroArt'),phs=art.querySelectorAll('.ph'),mx=0,my=0,sy=0;
+ function upd(){phs.forEach(function(p){var d=+p.dataset.depth;p.style.transform='translate('+(mx*d)+'px,'+(my*d-sy*d/60)+'px)'})}
+ addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;requestAnimationFrame(upd)});
+ addEventListener('scroll',function(){sy=Math.min(scrollY,800);requestAnimationFrame(upd)},{passive:true});
+ // Магнитные кнопки
+ document.querySelectorAll('.mag').forEach(function(m){m.addEventListener('mousemove',function(e){var r=m.getBoundingClientRect();
+  m.style.transform='translate('+((e.clientX-r.left-r.width/2)*.18)+'px,'+((e.clientY-r.top-r.height/2)*.3)+'px)'});
+  m.addEventListener('mouseleave',function(){m.style.transform=''})});
+}
+
+// Лайтбокс
+var L=[["https://avatars.mds.yandex.net/get-altay/19699569/2a0000019e02410c95e6767ec4f974013d76/XXL", "img/p01.jpg", "Композиция в розовом кашпо"], ["https://avatars.mds.yandex.net/get-altay/19532714/2a0000019bb379d41a55b04bc532f7237b90/XXL", "img/p06.jpg", "Букет"], ["https://avatars.mds.yandex.net/get-altay/16069310/2a0000019ba2f923b2575d1fc9fcbb7b000d/XXL", "img/p09.jpg", "Сиреневые цветы на столе"], ["https://avatars.mds.yandex.net/get-altay/18114977/2a0000019e02410bec4ceb6c22c6e94ab787/XXL", "img/p02.jpg", "Композиция в кашпо"], ["https://avatars.mds.yandex.net/get-altay/15388054/2a0000019ba2f91715d42ac2b56d0159372f/XXL", "img/p13.jpg", "Букет"], ["https://avatars.mds.yandex.net/get-altay/18152412/2a0000019c7a0dd672c2ecaf7b0601949355/XXL", "img/p22.jpg", "Витрина с букетами"], ["https://avatars.mds.yandex.net/get-altay/18128678/2a0000019c50a3211d5856928fb4e970420b/XXL", "img/p04.jpg", "Композиция на табурете"], ["https://avatars.mds.yandex.net/get-altay/18703564/2a0000019bb379aa50ea28aee6db1bdcb4c9/XXL", "img/p12.jpg", "Букет в вазе"], ["https://avatars.mds.yandex.net/get-altay/20217881/2a000001a032c45b152039276d8bd80457ca/XXL", "img/p17.jpg", "Букет в вазе"], ["https://avatars.mds.yandex.net/get-altay/17651669/2a0000019bb379d6ce846c06486936aeeaa2/XXL", "img/p19.jpg", "Букет в руке"], ["https://avatars.mds.yandex.net/get-altay/19766436/2a0000019c50a3842ad920546cd8397bc395/XXL", "img/p03.jpg", "Ветки в напольной вазе"], ["https://avatars.mds.yandex.net/get-altay/16410678/2a0000019c50a37d9ad4186e954419fd45fc/XXL", "img/p15.jpg", "Букет в вазе"], ["https://avatars.mds.yandex.net/get-altay/19546938/2a0000019c50a34b6ca8c2eeaa67fd5ce829/XXL", "img/p18.jpg", "Букет"], ["https://avatars.mds.yandex.net/get-altay/20828855/2a0000019ffc5994d1e83d494d6bb60be426/XXL", "img/p23.jpg", "Букет и полки в зале"], ["https://avatars.mds.yandex.net/get-altay/20142926/2a0000019e02410c2d2426d6fa01cf058997/XXL", "img/p16.jpg", "Букет в вазе"], ["https://avatars.mds.yandex.net/get-altay/19593321/2a0000019ba2f91db793d6047fc718e5e7cc/XXL", "img/p05.jpg", "Цветы крупным планом"], ["https://avatars.mds.yandex.net/get-altay/19519244/2a0000019c50a37c9391a75b62021bbd6972/XXL", "img/p14.jpg", "Букет"]],lb=document.getElementById('lb'),li=document.getElementById('lbImg'),lc=document.getElementById('lbCap'),cur=0;
+function show(i){cur=(i+L.length)%L.length;li.onerror=function(){li.onerror=null;li.src=L[cur][1]};li.src=L[cur][0];li.alt=L[cur][2];lc.textContent=L[cur][2]}
+function open(i){show(i);lb.hidden=false;document.body.style.overflow='hidden';lb.querySelector('.lb-x').focus()}
+function close(){lb.hidden=true;document.body.style.overflow=''}
+document.querySelectorAll('.g-item').forEach(function(g){g.tabIndex=0;g.addEventListener('click',function(){open(+g.dataset.i)});
+ g.addEventListener('keydown',function(e){if(e.key==='Enter')open(+g.dataset.i)})});
+lb.querySelector('.lb-x').onclick=close;lb.querySelector('.lb-p').onclick=function(){show(cur-1)};lb.querySelector('.lb-n').onclick=function(){show(cur+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)close()});
+addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+var tx=0;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1))});
+})();
+</script>
+</body>
+</html>
